@@ -6,8 +6,25 @@
     <script src="jquery-2.1.3.js"></script>
     <script src="jquery-ui.min.js"></script>
     <link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #cccccc;
+        }
+        .changediv{
+            width: 200px;
+            height: 200px;
+            background-color: #0078a3;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="changediv"></div>
+    <script>
+        $("div").on("click", function () {
+           $(this).removeClass("changediv",1000,"easeInCirc")
+        });
+    </script>
 </body>
 </html>
