@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-2.1.3.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #cccccc;
+            border: 1px solid gold;
+        }
+    </style>
+</head>
+<body>
+    <button>hide this div</button>
+    <div></div>
+    <script>
+        $("button").click(function () {
+           $("div").hide("drop",{direction:"left"},2000)
+        });
+    </script>
+</body>
+</html>
